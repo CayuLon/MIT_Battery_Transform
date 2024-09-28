@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 with open('batch1.pkl', 'rb') as fp:
     bat_dict = pickle.load(fp)
 
-print(bat_dict)
+print(bat_dict.keys())
 plt.figure(1)
 plt.plot(bat_dict['b1c43']['summary']['cycle'], bat_dict['b1c43']['summary']['QD'])
 plt.figure(2)
